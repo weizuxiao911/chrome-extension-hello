@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "hellocrx",
+    "version": "1.0.0",
+    "description": "crx入门学习",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "index.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ],
+    "permissions": [
+        "bookmarks",
+        "http://*/*",
+        "https://*/*",
+        "contextMenus",
+        "tabs"
+    ]
+}
